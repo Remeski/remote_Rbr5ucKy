@@ -1,0 +1,4 @@
+GUI r
+STRING chrome https://www.youtube.com/watch?v=H-OWuCkpguM
+DELAY 1000
+
