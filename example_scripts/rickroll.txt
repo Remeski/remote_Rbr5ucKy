@@ -1,0 +1,6 @@
+GUI r
+STRING chrome https://www.youtube.com/watch?v=xvFZjo5PgG0 
+DELAY 500
+RETURN
+DELAY 5000
+SPACE

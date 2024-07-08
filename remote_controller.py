@@ -12,11 +12,11 @@ url = f"http://{args.ip}/s?t="
 
 with open(args.file, "r") as f:
     while True:
-        line = f.readline()
+        line = f.readline().strip()
         if not line:
             break
         if line.startswith("DELAY"):
-            time.sleep(int(line[6:]))
+            time.sleep(int(line[6:])/1000)
         else:
             req_url = url + line 
             requests.get(req_url)

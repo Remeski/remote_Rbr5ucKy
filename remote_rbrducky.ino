@@ -77,7 +77,7 @@ void setup() {
   // you're connected now, so print out the status
   printWiFiStatus();
 
-  Keyboard.begin();
+  Keyboard.begin(KeyboardLayout_sv_SE);
   delay(1000);
 
   Serial.println("Started keyboard!");
@@ -171,6 +171,11 @@ void processCommand(String cmd) {
   char mods[3];
   int mods_count = parseModifiers(&cmd, mods);
   Serial.println(cmd);
+
+  if (cmd == "SPACE" ) {
+    sendSpecialMod(' ', mods, mods_count);
+    return;
+  } 
 
   if (cmd == "RETURN" || cmd == "ENTER" ) {
     sendSpecialMod(KEY_RETURN, mods, mods_count);

@@ -1,0 +1,7 @@
+GUI r
+STRING notepad
+RETURN
+DELAY 5000
+RETURN
+STRING terve
+
